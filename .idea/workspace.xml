@@ -24,6 +24,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/ENI/BeeBeeCarFront" />
@@ -77,5 +78,19 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="874" y="101" key="CommitChangelistDialog2" timestamp="1585841519584">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="874" y="101" key="CommitChangelistDialog2/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585841519584" />
+    <state x="872" y="239" width="816" height="555" key="Vcs.Push.Dialog.v2" timestamp="1585841540776">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="872" y="239" width="816" height="555" key="Vcs.Push.Dialog.v2/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585841540776" />
+    <state x="1082" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585841552393">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1082" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585841552393" />
   </component>
 </project>
