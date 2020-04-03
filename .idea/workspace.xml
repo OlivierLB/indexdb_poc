@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="960bd37b-e4ac-479c-84f3-5dbf14e4bb41" name="Default Changelist" comment="" />
+    <list default="true" id="960bd37b-e4ac-479c-84f3-5dbf14e4bb41" name="Default Changelist" comment="List">
+      <change afterPath="$PROJECT_DIR$/.floo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.flooignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Cmd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Wow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Brand.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/StyleColor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +31,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZzU7oyEeKKISWFGdfv51dcYq0p" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,17 +41,24 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/ENI/BeeBeeCarFront" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="REACT_APP_API_APPLICATION=https://cwf-prep-appservice-supplyupstream-api.azurewebsites.net/ react-scripts start" />
+    </option>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -72,7 +97,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585841251818</updated>
-      <workItem from="1585841256848" duration="510000" />
+      <workItem from="1585841256848" duration="944000" />
+      <workItem from="1585842216481" duration="385000" />
+      <workItem from="1585842621119" duration="2157000" />
+      <workItem from="1585897933967" duration="83000" />
+      <workItem from="1585898296598" duration="3931000" />
+      <workItem from="1585904730593" duration="21430000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1585841520486</created>
@@ -88,21 +118,70 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="874" y="101" key="CommitChangelistDialog2" timestamp="1585841519584">
+    <state x="1018" y="390" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1585842200181">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="874" y="101" key="CommitChangelistDialog2/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585841519584" />
+    <state x="1018" y="390" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585842200181" />
+    <state x="327" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585898002897">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="327" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585898002897" />
+    <state x="874" y="101" key="CommitChangelistDialog2" timestamp="1585930986425">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="874" y="101" key="CommitChangelistDialog2/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585930986425" />
+    <state x="1060" y="262" key="FileChooserDialogImpl" timestamp="1585842192435">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1060" y="262" key="FileChooserDialogImpl/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585842192435" />
+    <state width="1234" height="234" key="GridCell.Tab.0.bottom" timestamp="1585898528984">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1234" height="234" key="GridCell.Tab.0.bottom/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585898528984" />
+    <state width="1234" height="234" key="GridCell.Tab.0.center" timestamp="1585898528984">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1234" height="234" key="GridCell.Tab.0.center/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585898528984" />
+    <state width="1234" height="234" key="GridCell.Tab.0.left" timestamp="1585898528984">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1234" height="234" key="GridCell.Tab.0.left/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585898528984" />
+    <state width="1234" height="234" key="GridCell.Tab.0.right" timestamp="1585898528984">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1234" height="234" key="GridCell.Tab.0.right/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585898528984" />
+    <state x="220" y="266" key="IDE.errors.dialog" timestamp="1585908150353">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="220" y="266" key="IDE.errors.dialog/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585908150353" />
+    <state x="374" y="252" key="RollbackChangesDialog" timestamp="1585916669230">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="374" y="252" key="RollbackChangesDialog/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585916669230" />
+    <state x="781" y="163" key="SettingsEditor" timestamp="1585842600814">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="781" y="163" key="SettingsEditor/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585842600814" />
     <state x="872" y="239" width="816" height="555" key="Vcs.Push.Dialog.v2" timestamp="1585841540776">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="872" y="239" width="816" height="555" key="Vcs.Push.Dialog.v2/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585841540776" />
-    <state x="1082" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585841552393">
+    <state x="366" y="51" width="1732" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1585926572699">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1082" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585841552393" />
+    <state x="366" y="51" width="1732" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585926572699" />
+    <state x="1082" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585916630997">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1082" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585916630997" />
+    <state x="296" y="244" key="run.anything.popup" timestamp="1585904404801">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="296" y="244" key="run.anything.popup/0.0.2560.1040/2560.0.1920.1040@0.0.2560.1040" timestamp="1585904404801" />
   </component>
 </project>
