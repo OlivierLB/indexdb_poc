@@ -8,7 +8,8 @@ export class Wow extends Component {
     super(props);
     this.state = {
       negociations: [],
-      brands: []
+      brands: [],
+      filtreBrand : ""
     };
     this.onSelect = this.onSelect.bind(this);
   }
@@ -24,8 +25,29 @@ export class Wow extends Component {
   }
 
   onSelect(e){
-    console.log(e.target.value)
+    this.setState({filtreBrand: e.target.value})
+    this.renderNegociations()
   }
+
+  // Calculate intersection of multiple array or object values.
+  intersect (arrList) {
+    var arrLength = Object.keys(arrList).length;
+    // (Also accepts regular objects as input)
+    var index = {};
+    for (var i in arrList) {
+      for (var j in arrList[i]) {
+        var v = arrList[i][j];
+        if (index[v] === undefined) index[v] = {};
+        index[v][i] = true; // Mark as present in i input.
+      };
+    };
+    var retv = [];
+    for (var i in index) {
+      if (Object.keys(index[i]).length == arrLength) retv.push(i);
+    };
+    return retv;
+  };
+
 
   renderNegociations() {
 
@@ -33,9 +55,17 @@ export class Wow extends Component {
      Dexie.exists('CWFDatabase').then(async(exists) => {
       if (exists) {
         db = await new Dexie("CWFDatabase").open();
-        db.tables.map(table => {
-          table.toArray()
-            .then((r) => {
+        db.tables.map(async table => {
+          
+          const promises = []
+          promises.push(table.where('style_color_code').anyOf("J04298/M41", "D35N59/N48").primaryKeys());
+          promises.push(table.where('style_color_label').anyOf( "TEE-SHIRT MANCHES COURTES BLANC BLEU").primaryKeys());
+          console.log(this.state.filtreBrand !== '');
+          if(this.state.filtreBrand !== '')promises.push( table.where('brand_code').anyOf(this.state.filtreBrand).primaryKeys());
+          const keys = await Promise.all(promises);
+          //var intersection = keys[0].filter(key => keys[1].indexOf(key) !== -1);
+          var intersection = this.intersect(keys);
+          table.where('id').anyOf(intersection).toArray().then((r) => {
               this.setState({negociations:
                   r.map((n, i) => (
                     <tr key={i}>
