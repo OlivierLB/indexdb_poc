@@ -31,20 +31,20 @@ export class Wow extends Component {
 
   // Calculate intersection of multiple array or object values.
   intersect (arrList) {
-    var arrLength = Object.keys(arrList).length;
+    const arrLength = Object.keys(arrList).length;
     // (Also accepts regular objects as input)
-    var index = {};
-    for (var i in arrList) {
-      for (var j in arrList[i]) {
-        var v = arrList[i][j];
+    const index = {};
+    for (let i in arrList) {
+      for (let j in arrList[i]) {
+        const v = arrList[i][j];
         if (index[v] === undefined) index[v] = {};
         index[v][i] = true; // Mark as present in i input.
-      };
-    };
-    var retv = [];
-    for (var i in index) {
-      if (Object.keys(index[i]).length == arrLength) retv.push(i);
-    };
+      }
+    }
+    const retv = [];
+    for (let i in index) {
+      if (Object.keys(index[i]).length === arrLength) retv.push(i);
+    }
     return retv;
   };
 
@@ -57,15 +57,16 @@ export class Wow extends Component {
         db = await new Dexie("CWFDatabase").open();
         db.tables.map(async table => {
           
-          const promises = []
-          promises.push(table.where('style_color_code').anyOf("J04298/M41", "D35N59/N48").primaryKeys());
-          promises.push(table.where('style_color_label').anyOf( "TEE-SHIRT MANCHES COURTES BLANC BLEU").primaryKeys());
+          //const promises = []
+          //promises.push(table.where('style_color_code').anyOf("J04298/M41", "D35N59/N48").primaryKeys());
+          //promises.push(table.where('style_color_label').anyOf( "TEE-SHIRT MANCHES COURTES BLANC BLEU").primaryKeys());
           console.log(this.state.filtreBrand !== '');
-          if(this.state.filtreBrand !== '')promises.push( table.where('brand_code').anyOf(this.state.filtreBrand).primaryKeys());
-          const keys = await Promise.all(promises);
+          //if(this.state.filtreBrand !== '')promises.push( table.where('brand_code').anyOf(this.state.filtreBrand).primaryKeys());
+          //const keys = await Promise.all(promises);
           //var intersection = keys[0].filter(key => keys[1].indexOf(key) !== -1);
-          var intersection = this.intersect(keys);
-          table.where('id').anyOf(intersection).toArray().then((r) => {
+          //var intersection = this.intersect(keys);
+          //table.where('id').anyOf(intersection).toArray().then((r) => {
+          table.toArray().then((r) => {
               this.setState({negociations:
                   r.map((n, i) => (
                     <tr key={i}>
