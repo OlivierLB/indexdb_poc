@@ -13,8 +13,14 @@ export class Cmd extends Component {
   async getExcel() {
     await getSeasons().then(async (result) => {
       await getNegociationAllocateExport(result.data["hydra:member"][2].id, '?page=1&itemsPerPage=50')
-        .then((result) => {
-         console.log(result)
+        .then((response) => {
+          const url = window.URL.createObjectURL(new Blob([response.data], { type: response.request.getResponseHeader('Content-Type')}));
+          const link = document.createElement('a');
+          link.href = url;
+          link.setAttribute('download', 'export.xls');
+          document.body.appendChild(link);
+          link.click();
+          console.log(response)
         });
     });
   }
